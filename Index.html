@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/InternOut</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="body" onclick="toggleBody()">
+    <header id="header">
+    <a id="logo" href="">InternOut</a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" onclick="toggleMenu()">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="/">Contato</a></li>
+        <li><a href="/">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section>
+      <form action="">
+        <img id="login" width="150px" src="https://cdn-icons-png.flaticon.com/512/64/64572.png"/>
+       <div class="form">
+          <input type="email" name="acao" id="acao" class="inputUser" required>
+        <label for="acao" class="labelInput">E-mail:</label>
+        <span class="focus-input"></span>
+       </div>
+       <div class="form">
+         <input type="password" name="password" id="password" class="inputUser" required>
+       <label for="telefone1" class="labelInput">Senha:</label>
+       <span class="focus-input"></span>
+       </div>
+       <input type="submit" id="btn-login" value="Login" />
+      </form>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>
